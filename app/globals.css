@@ -2,26 +2,147 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/*:root {*/
+/*  --foreground-rgb: 0, 0, 0;*/
+/*  --background-start-rgb: 214, 219, 220;*/
+/*  --background-end-rgb: 255, 255, 255;*/
+/*}*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --foreground-rgb: 255, 255, 255;*/
+/*    --background-start-rgb: 0, 0, 0;*/
+/*    --background-end-rgb: 0, 0, 0;*/
+/*  }*/
+/*}*/
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/*  color: rgb(var(--foreground-rgb));*/
+/*  background: linear-gradient(*/
+/*      to bottom,*/
+/*      transparent,*/
+/*      rgb(var(--background-end-rgb))*/
+/*    )*/
+/*    rgb(var(--background-start-rgb));*/
+  background-color: grey;
+  margin: 0.5rem;
+
+}
+
+section > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-picture {
+  float: left;
+  width: 10.5vw;
+  max-width: 170px;
+  padding: 0 1em 0 0;
+}
+
+.contact-info {
+  /*padding-top: 0.6em;*/
+  display: flex;
+  align-content: center;
+}
+
+.contact-info > svg {
+  padding-right: 8px;
+}
+
+
+
+
+
+.experience {
+  /*color: white;*/
+  margin-bottom: 1.2em;
+  /*background-color: #282c34;*/
+  background-color: #C2FCF7;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 4px;
+}
+.experience a {
+  color: cadetblue;
+}
+.experience a:hover {
+  color: darkslateblue;
+}
+
+.experience h2 {
+  margin: 0;
+  font-size: large;
+}
+
+.experience p + h2 {
+  /*margin-top: 12px;*/
+}
+
+
+.experience > .duration {
+  font-size: small;
+  color: #040F0F;
+  font-weight: bold;
+}
+
+
+.experience > .school,
+.experience > .company {
+  margin: 2px 0;
+}
+
+.experience > .location {
+  float: right;
+  font-size: small;
+  color: #040F0F;
+  font-weight: bold;
+}
+
+.experience > .degree,
+.experience > .position {
+  font-size: small;
+  color: darkred;
+  font-weight: bold;
+}
+
+.experience > .contact {
+  font-size: small;
+  color: #57737A;
+  font-weight: bold;
+
+  display: flex;
+  align-content: center;
+}
+
+.experience > .contact svg {
+  padding-right: 8px;
+}
+
+.experience > div.description > p {
+  text-align: justify;
+  margin: 0.4em;
+}
+
+
+.experience > .logo {
+  float: right;
+  padding: 0 0 0 1em;
+}
+
+.experience > .logo > img {
+  /*max-width: 8vh;*/
+}
+
+.experience > .source-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .experience > .logo > img {
+    /*max-width: 32vw;*/
+  }
 }
