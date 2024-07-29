@@ -3,137 +3,143 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground: black;
+    --background-start: lightgrey;
+    --background-end: white;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/
-/*    --foreground-rgb: 255, 255, 255;*/
-/*    --background-start-rgb: 0, 0, 0;*/
-/*    --background-end-rgb: 0, 0, 0;*/
+/*    --foreground: 255, 255, 255;*/
+/*    --background-start: 0, 0, 0;*/
+/*    --background-end: 0, 0, 0;*/
 /*  }*/
 /*}*/
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: var(--foreground);
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 1em 4em
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .profile-picture {
-  float: left;
-  width: 10.5vw;
-  max-width: 170px;
-  padding: 0 1em 0 0;
+    /*float: left;*/
+    /*width: 10.5vw;*/
+    /*max-width: 170px;*/
+    /*padding: 0 1em 0 0;*/
+}
+
+.contact-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 54em;
 }
 
 .contact-info {
-  padding-top: 0.6em;
-  display: flex;
-  align-content: center;
+    padding-top: 0.6em;
+    display: flex;
+    align-content: center;
 }
 
 .contact-info > svg {
-  padding-right: 8px;
+    padding-right: 8px;
+    width: 24px;
+    height: 24px;
 }
-
-
-
 
 
 .experience {
-  /*color: white;*/
-  margin-bottom: 1.2em;
-  /*background-color: #282c34;*/
-  background-color: #C2FCF7;
-  padding: 1em;
-  border-radius: 4px;
+    /*color: white;*/
+    margin-bottom: 1.2em;
+    /*background-color: #282c34;*/
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    padding: 1em;
+    border-radius: 4px;
 }
+
 .experience a {
-  color: cadetblue;
+    color: cadetblue;
 }
+
 .experience a:hover {
-  color: darkslateblue;
+    color: darkslateblue;
 }
 
 .experience h2 {
-  margin: 0;
-  font-size: large;
+    margin: 0;
+    font-size: large;
 }
 
 .experience p + h2 {
-  /*margin-top: 12px;*/
+    /*margin-top: 12px;*/
 }
 
 
 .experience > .duration {
-  font-size: small;
-  color: #040F0F;
-  font-weight: bold;
+    font-size: small;
+    color: #040F0F;
+    font-weight: bold;
 }
 
 
 .experience > .school,
 .experience > .company {
-  margin: 2px 0;
+    margin: 2px 0;
 }
 
 .experience > .location {
-  float: right;
-  font-size: small;
-  color: #040F0F;
-  font-weight: bold;
+    float: right;
+    font-size: small;
+    color: #040F0F;
+    font-weight: bold;
 }
 
 .experience > .degree,
 .experience > .position {
-  font-size: small;
-  color: darkred;
-  font-weight: bold;
+    font-size: small;
+    color: darkred;
+    font-weight: bold;
 }
 
 .experience > .contact {
-  font-size: small;
-  color: #57737A;
-  font-weight: bold;
+    font-size: small;
+    color: #57737A;
+    font-weight: bold;
 
-  display: flex;
-  align-content: center;
+    display: flex;
+    align-content: center;
 }
 
 .experience > .contact svg {
-  padding-right: 8px;
+    padding-right: 8px;
 }
 
 .experience > p {
-  text-align: justify;
-  margin: 0.4em;
+    text-align: justify;
+    margin: 0.4em;
 }
 
 
 .experience > .logo {
-  float: right;
-  padding: 0 0 0 1em;
+    float: right;
+    padding: 0 0 0 1em;
 }
 
 .experience > .logo > img {
-  /*max-width: 8vh;*/
+    /*max-width: 8vh;*/
 }
 
 .experience > .source-link {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-@media only screen and (max-width: 1200px) {
-  .experience > .logo > img {
-    /*max-width: 32vw;*/
-  }
+    display: flex;
+    justify-content: flex-end;
 }
