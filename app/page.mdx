@@ -15,19 +15,22 @@ export const remoteAttr = {
 }
 
 <div className="content columns max-w-screen-lg m-auto">
-    <h1>Ari Asulin - Software Engineer</h1>
-    <section className="md:flex  md:space-x-4">
-        <div className="experience md:w-1/5">
-            <img src={ProfilePicture.src} className="profile-picture" alt="Profile"/>
+    <header className='text-center'>
+        <h1>Ari Asulin </h1>
+        <code>(Full Stack Developer)</code>
+    </header>
+    <h2>Introduction</h2>
+    <section className="md:flex md:space-x-4">
+        <div className="experience">
+            <img src={ProfilePicture.src} className="profile-picture md:max-w-60" alt="Profile"/>
         </div>
         <div className="experience md:w-4/5">
             <p>
-                I'm a full-stack developer with 15 years of industrial experience.
+                I'm a full-stack developer with over 18 years of industrial experience.
                 I consider programming to be a form of art requiring an artistic mind.
                 I work well with teams and just as well autonomously.
-                I am a US citizen born in Texas.
+                I was born in Texas and raised in Arizona. My family recently moved to Savannah, GA.
                 I would like to work long-term in an American-owned, low stress, high responsibility job.
-                I would prefer not to work for any public (i.e. trades on NYSE), or international corporations.
                 My ambitions include designing an open-source
                 <a className="logo" href="https://audio-source-site.vercel.app" {...remoteAttr}> Digital Audio
                     Workstation (DAW) </a>
@@ -36,21 +39,21 @@ export const remoteAttr = {
         </div>
     </section>
 
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <section>
-        <div className="experience md:flex flex-wrap">
+        <div className="experience md:flex md:flex-wrap">
             <div className="contact-info md:w-1/3">
                 <IoIosContact/>
                 Ari Raphael Asulin
             </div>
             <div className="contact-info md:w-1/3">
                 <GrLocation/>
-                Mesa, AZ
+                Savannah, GA
             </div>
             <div className="contact-info md:w-1/3">
                 <SiGooglemessages/>
-                <a href="tel:602-492-7768" {...remoteAttr}>
-                    602-492-7768
+                <a href="tel:602-632-6729" {...remoteAttr}>
+                    602-632-6729
                 </a>
             </div>
             <div className="contact-info md:w-1/3">
@@ -67,14 +70,14 @@ export const remoteAttr = {
             </div>
             <div className="contact-info md:w-1/3">
                 <CgWebsite/>
-                <a href="https://linkedin.com/in/ariasulin" {...remoteAttr}>
-                    linkedin.com/in/ariasulin
+                <a href="https://www.linkedin.com/in/ari-asulin" {...remoteAttr}>
+                    linkedin.com/in/ari-asulin
                 </a>
             </div>
         </div>
     </section>
 
-    <h1>Education</h1>
+    <h2>Education</h2>
     <section className="md:flex md:space-x-4">
         <div className="experience education md:w-1/2">
             <div className="location">Tempe, Arizona</div>
@@ -98,10 +101,10 @@ export const remoteAttr = {
         </div>
     </section>
 
-    <h1>Skills and Technologies</h1>
+    <h2>Skills and Technologies</h2>
     <section>
         <div className="experience skills">
-            <h2>Programming</h2>
+            <h3>Programming</h3>
             <p>
                 <em>JavaScript</em>,
                 TypeScript,
@@ -119,13 +122,13 @@ export const remoteAttr = {
                 REST & GraphQL
             </p>
 
-            <h2>Stack</h2>
+            <h3>Stack</h3>
             <p>
                 <em>NodeJS (Server) + React* (Client),</em>
                 LAMP (or nginx)
             </p>
 
-            <h2>Media</h2>
+            <h3>Media</h3>
             <p>
                 Video Editing,
                 Image Creation,
@@ -134,7 +137,7 @@ export const remoteAttr = {
                 Broadcasting
             </p>
 
-            <h2>Administration</h2>
+            <h3>Administration</h3>
             <p>
                 Linux System Administration,
                 Debian Server,
@@ -143,7 +146,7 @@ export const remoteAttr = {
                 SSL Certificates
             </p>
 
-            <h2>Tools</h2>
+            <h3>Tools</h3>
             <p>
                 git,
                 ssh,
@@ -157,20 +160,20 @@ export const remoteAttr = {
                 NVDA
             </p>
 
-            <h2>Certifications</h2>
+            <h3>Certifications</h3>
             <p>
                 AWS Certified Cloud Practitioner,
                 AWS Certified Developer
             </p>
 
-            <h2>Other</h2>
+            <h3>Other</h3>
             <p>
                 Juggling, Martial Arts, Historic Investigation
             </p>
         </div>
     </section>
 
-    <h1>Personal Projects</h1>
+    <h2>Personal Projects</h2>
     <section>
         <div className="experience project">
             <a className="logo" href="https://audio-source-site.vercel.app" {...remoteAttr}>
@@ -283,7 +286,7 @@ export const remoteAttr = {
     </section>
 
 
-    <h1>Work Experience</h1>
+    <h2>Work Experience</h2>
     <section>
         <div className="experience work">
             <div className="location">Scottsdale, Arizona</div>
@@ -409,4 +412,8 @@ export const remoteAttr = {
             </div>
         </div>
     </section>
+
+    <code className='text-center'>
+        Website written by Ari Asulin using ReactJS and NextJS + MDX support (2024)
+    </code>
 </div>

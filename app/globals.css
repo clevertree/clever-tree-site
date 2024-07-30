@@ -46,7 +46,7 @@ h2 {
 }
 
 .contact-info {
-    padding-top: 0.6em;
+    padding: 2px 0;
     display: flex;
     align-content: center;
 }
